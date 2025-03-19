@@ -30,19 +30,22 @@ const Dashboard = () => {
         )}
 
         <section>
-          <div className="bg-amber-200 p-6 m-7 rounded-2xl text-6xl flex justify-center items-center">
+          <div className="bg-amber-200 p-6 m-7 rounded-2xl text-3xl flex justify-center items-center">
             <img
               className="rounded-full m-3 hover:shadow-2xl transition duration-500 ease-in-out"
               src="src/icons/web-logo.jpg"
               alt="web-logo"
-              height={200}
-              width={200}
+              height={100}
+              width={100}
             />
             Welcome Back Teacher !!
           </div>
-          <div className="flex bg-amber-200 text-3xl p-3 m-3 rounded-2xl">
-            <img src="src/icons/web-logo.jpg" alt="moreicon" height={20} width={50} />
+          <div className="fkex">
+            <div className=""></div>
           </div>
+        </section>
+        <section>
+          <div className=""></div>
         </section>
       </div>
     </div>

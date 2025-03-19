@@ -85,7 +85,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="relative bg-amber-50 p-6 md:p-10 lg:p-20 flex flex-col items-center justify-center min-h-screen">
+    <div className="relative bg-gray-800 p-6 md:p-10 lg:p-20 flex flex-col items-center justify-center min-h-screen">
       <div className="text-blue-700 text-2xl md:text-3xl font-bold mb-6 md:mb-8">
         {action}
       </div>

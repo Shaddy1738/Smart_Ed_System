@@ -11,7 +11,7 @@ const Events = () => {
   return (
     <div className="relative h-screen bg-gray-900">
       {/* Sidebar */}
-      <Slider isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <Sider isOpen={isOpen} toggleSidebar={toggleSidebar} />
 
       {/* Main Content */}
       <div

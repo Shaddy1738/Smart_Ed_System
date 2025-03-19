@@ -31,7 +31,7 @@ const Slider = ({ isOpen, toggleSidebar }) => {
           </div>
         </div>
 
-        <nav className='m-5 '> 
+        <nav className='m-5'> 
           {/* Menu Items */}
           {[
             { name: 'Dashboard', path: '/dashboard' },
@@ -60,7 +60,7 @@ const Slider = ({ isOpen, toggleSidebar }) => {
         </nav>
 
         {/* Sidebar Footer */}
-        <div className="mt-8 border-t border-gray-700 pt-4">
+        <div className="mt-28 border-t border-gray-700 pt-4 ">
           <p className="text-sm text-gray-400">@onyangosoftwares</p>
         </div>
       </div>

@@ -25,7 +25,7 @@ const LiveClass = () => {
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold p-1 rounded"
             style={{ width: '30px', height: '30px' }}
           >
-            <img src="src/icons/menu-icon.gif" alt="Menu" style={{ width: '20px', height: '20px' }} />
+            <img src="src/icons/menu-icon.gif" alt="menu" style={{ width: '20px', height: '20px' }} />
           </button>
         )}
 
