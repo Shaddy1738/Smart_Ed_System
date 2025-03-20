@@ -30,18 +30,78 @@ const Classes = () => {
         )}
 
         <section>
-          <div className="bg-amber-200 p-6 m-7 rounded-2xl text-6xl flex justify-center items-center">
-            <img
-              className="rounded-full m-3 hover:shadow-2xl transition duration-500 ease-in-out"
-              src="src/icons/web-logo.jpg"
-              alt="web-logo"
-              height={200}
-              width={200}
-            />
-            Welcome Back Teacher !!
+   
+          <div className="flex text-3xl rounded-2xl cursor-pointer">
+           <div className="rounded-2xl bg-amber-200 m-3 p-6 "> Total Students</div>
+           <div className="rounded-2xl bg-amber-200 m-3 p-6 ">Total courses</div>
+           <div className="rounded-2xl bg-amber-200  m-3 p-6 "> Total Classes</div>
           </div>
-          <div className="flex bg-amber-200 text-3xl p-3 m-3 rounded-2xl">
-            <img src="src/icons/web-logo.jpg" alt="moreicon" height={20} width={50} />
+          <div className="mt-9 p-5 m-3 text-white" >
+            <p className=' text-3xl'>My Classes</p>
+            <section id="assignments" className="mb-4 p-4 border rounded">
+          <table className="w-full ">
+            <thead>
+              <tr className="bg-amber-200 text-black">
+                <th className="border p-2">Course Code</th>
+                <th className="border p-2">Course</th>
+                <th className="border p-2">Category</th>
+                <th className="border p-2">Start Time</th>
+                <th className="border p-2">End Time</th>
+                <th className="border p-2">Students</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border p-2">BCS 321</td>
+                <td className="border p-2">Computer Networks</td>
+                <td className="border p-2">Computer Science</td>
+                <td className="border p-2">10:00 AM</td>
+                <td className="border p-2">1:00 PM</td>
+                <td className="border p-2">75</td>
+              </tr>
+              <tr>
+              <td className="border p-2">BCS 321</td>
+                <td className="border p-2">Computer Networks</td>
+                <td className="border p-2">Computer Science</td>
+                <td className="border p-2">10:00 AM</td>
+                <td className="border p-2">1:00 PM</td>
+                <td className="border p-2">75</td>
+              </tr>
+              <tr>
+              <td className="border p-2">BCS 321</td>
+                <td className="border p-2">Computer Networks</td>
+                <td className="border p-2">Computer Science</td>
+                <td className="border p-2">10:00 AM</td>
+                <td className="border p-2">1:00 PM</td>
+                <td className="border p-2">75</td>
+              </tr>
+              <tr>
+              <td className="border p-2">BCS 321</td>
+                <td className="border p-2">Computer Networks</td>
+                <td className="border p-2">Computer Science</td>
+                <td className="border p-2">10:00 AM</td>
+                <td className="border p-2">1:00 PM</td>
+                <td className="border p-2">75</td>
+              </tr>
+              <tr>
+              <td className="border p-2">BCS 321</td>
+                <td className="border p-2">Computer Networks</td>
+                <td className="border p-2">Computer Science</td>
+                <td className="border p-2">10:00 AM</td>
+                <td className="border p-2">1:00 PM</td>
+                <td className="border p-2">75</td>
+              </tr>
+              <tr>
+              <td className="border p-2">BCS 321</td>
+                <td className="border p-2">Computer Networks</td>
+                <td className="border p-2">Computer Science</td>
+                <td className="border p-2">10:00 AM</td>
+                <td className="border p-2">1:00 PM</td>
+                <td className="border p-2">75</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
           </div>
         </section>
       </div>
