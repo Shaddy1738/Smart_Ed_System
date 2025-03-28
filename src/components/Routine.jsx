@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Sider from "./Sider";
+import Sider from "./SideBar";
 
 const Routine = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState(new Date());
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
 
   const handleDateChange = (days) => {
     const newDate = new Date(selectedDate);
@@ -24,7 +19,7 @@ const Routine = () => {
     });
   };
 
-  // Sample routine data (you'll likely fetch this from an API or database)
+
   const dailyRoutine = [
     { time: "8:00 AM", event: "Morning Workout" },
     { time: "9:00 AM", event: "Breakfast" },
@@ -36,30 +31,10 @@ const Routine = () => {
 
   return (
     <div className="bg-gray-800 text-white min-h-screen flex">
-      {/* Sidebar */}
-      <Sider isOpen={isOpen} toggleSidebar={toggleSidebar} />
-
-      {/* Main Content */}
       <div
-        className={`transition-margin-left duration-300 ease-in-out ${
-          isOpen ? "ml-64" : "ml-0"
-        } p-4 w-full`} // Adjusted width to w-full
+        className={`transition-margin-left duration-300 ease-in-out p-4 w-full`} 
       >
-        {!isOpen && (
-          <button
-            onClick={toggleSidebar}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold p-1 rounded"
-            style={{ width: "30px", height: "30px" }}
-          >
-            <img
-              src="src/icons/menu-icon.gif"
-              alt="Menu"
-              style={{ width: "20px", height: "20px" }}
-            />
-          </button>
-        )}
-
-        {/* Main Content Area */}
+     
         <main className="flex flex-col p-8">
           <header className="flex justify-between items-center mb-8">
             <h1 className="text-2xl font-semibold">Daily Routine</h1>

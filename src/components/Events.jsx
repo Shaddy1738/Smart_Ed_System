@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
-import Sider from './Sider';
-
 const Events = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
-
-  // Dummy data for demonstration
   const liveEvents = [
     { id: 1, title: 'Object Oriented Programming', time: '10:00 AM - 12:00 PM' },
     { id: 2, title: 'Discrete Structures', time: '2:00 PM - 4:00 PM' },
@@ -31,25 +23,10 @@ const Events = () => {
 
   return (
     <div className="relative bg-gray-900">
-      {/* Sidebar */}
-      <Sider isOpen={isOpen} toggleSidebar={toggleSidebar} />
-
-      {/* Main Content */}
+     
       <div
-        className={`transition-margin-left duration-300 ease-in-out ${
-          isOpen ? 'ml-64' : 'ml-0'
-        } p-4`}
+        className={`transition-margin-left duration-300 ease-in-out  p-4`}
       >
-        {!isOpen && (
-          <button
-            onClick={toggleSidebar}
-            className="text-white font-bold p-1 rounded"
-            style={{ width: '30px', height: '30px' }}
-          >
-            <img src="src/icons/menu-icon.gif" alt="Menu" style={{ width: '20px', height: '20px' }} />
-          </button>
-        )}
-        {/* Live Events Section */}
         <div className="">
         <section className="bg-gray-800 p-6 m-7 rounded-2xl">
           <h2 className="text-3xl font-bold mb-4 text-white">Live Events</h2>
@@ -63,7 +40,6 @@ const Events = () => {
           </div>
         </section>
 
-        {/* Upcoming Classes Section */}
         <section className="bg-gray-800 p-6 m-7 rounded-2xl text-white">
           <h2 className="text-3xl font-bold mb-4">Upcoming Classes</h2>
           <div className="space-y-4">
@@ -76,7 +52,6 @@ const Events = () => {
           </div>
         </section>
 
-        {/* Ongoing Classes Section */}
         <section className="bg-gray-800 p-6 m-7 rounded-2xl">
           <h2 className="text-3xl font-bold mb-4 text-white">Ongoing Classes</h2>
           <div className="space-y-4">
@@ -89,7 +64,6 @@ const Events = () => {
           </div>
         </section>
 
-        {/* Events to Come Section */}
         <section className="bg-gray-800 p-6 m-7 rounded-2xl">
           <h2 className="text-3xl font-bold mb-4 text-white">Events to Come</h2>
           <div className="space-y-4">

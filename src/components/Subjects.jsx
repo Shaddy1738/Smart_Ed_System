@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Sider from './Sider';
+import Sider from './SideBar';
 
 const Subjects = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,24 +10,9 @@ const Subjects = () => {
 
   return (
     <div className="bg-gray-900 text-white min-h-screen flex">
-      {/* Sidebar */}
-      <Sider isOpen={isOpen} toggleSidebar={toggleSidebar} />
-
-      {/* Main Content */}
       <div
-        className={`transition-margin-left duration-300 ease-in-out ${
-          isOpen ? 'ml-64' : 'ml-0'
-        } p-4`}
-      >
-        {!isOpen && (
-          <button
-            onClick={toggleSidebar}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold p-1 rounded"
-            style={{ width: '30px', height: '30px' }}
-          >
-            <img src="src/icons/menu-icon.gif" alt="Menu" style={{ width: '20px', height: '20px' }} />
-          </button>
-        )}
+        className={`transition-margin-left duration-300 ease-in-outp-4`}>
+ 
       </div>
 
       <main className='flex-1 p-8'>

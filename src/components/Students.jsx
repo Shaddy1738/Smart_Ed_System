@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Sider from './Sider'; // Assuming you have a Sider component
+import Sider from './SideBar'; // Assuming you have a Sider component
 
 const Students = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,30 +50,11 @@ const Students = () => {
 
   return (
     <div className="bg-gray-800 text-white min-h-screen flex">
-      {/* Sidebar */}
-      <Sider isOpen={isOpen} toggleSidebar={toggleSidebar} />
-
-      {/* Main Content */}
+    
       <div
-        className={`transition-margin-left duration-300 ease-in-out ${
-          isOpen ? 'ml-64' : 'ml-0'
-        } p-4 w-full`}
+        className={`transition-margin-left duration-300 ease-in-out  p-4 w-full`}
       >
-        {!isOpen && (
-          <button
-            onClick={toggleSidebar}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold p-1 rounded"
-            style={{ width: '30px', height: '30px' }}
-          >
-            <img
-              src="src/icons/menu-icon.gif"
-              alt="Menu"
-              style={{ width: '20px', height: '20px' }}
-            />
-          </button>
-        )}
-
-        {/* Main Content Area */}
+      
         <main className="flex flex-col p-8">
           <header className="flex justify-between items-center mb-8">
             <h1 className="text-2xl font-semibold">Student Dashboard</h1>
@@ -85,7 +66,6 @@ const Students = () => {
             </button>
           </header>
 
-          {/* Add Student Form */}
           <div className="mb-8">
             <h2 className="text-lg font-semibold mb-2">Add New Student</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

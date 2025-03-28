@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Slider = ({ isOpen, toggleSidebar }) => {
-  const [activeItem, setActiveItem] = useState(''); // Default active item
+const SideBar = ({ isOpen, toggleSidebar }) => {
+  const [activeItem, setActiveItem] = useState(''); 
   const navigate = useNavigate();
 
   const handleItemClick = (itemName, path) => {
-    setActiveItem(itemName); // Set the active item
-    navigate(path); // Navigate to the specified path
+    setActiveItem(itemName);
+    navigate(path); 
   };
 
   return (
@@ -16,12 +16,11 @@ const Slider = ({ isOpen, toggleSidebar }) => {
         isOpen ? 'w-64' : 'w-0'
       } overflow-x-hidden bg-gray-800`}
     >
-      {/* Close Button */}
+     
       <button onClick={toggleSidebar} className="absolute top-4 right-4 text-2xl">
         &times;
       </button>
 
-      {/* Sidebar Content */}
       <div className="p-4">
         <div className="flex items-center mb-8">
           <div className="bg-purple-600 rounded-full w-10 h-10 flex items-center justify-center mr-2"></div>
@@ -32,7 +31,6 @@ const Slider = ({ isOpen, toggleSidebar }) => {
         </div>
 
         <nav className='m-5'> 
-          {/* Menu Items */}
           {[
             { name: 'Dashboard', path: '/dashboard' },
             { name: 'Subjects', path: '/subjects' },
@@ -50,16 +48,14 @@ const Slider = ({ isOpen, toggleSidebar }) => {
               onClick={() => handleItemClick(item.name, item.path)}
               className={`block py-2 px-4 rounded-md cursor-pointer transition-colors duration-200 ${
                 activeItem === item.name
-                  ? 'bg-purple-600 text-white' // Active item style
-                  : 'hover:bg-gray-700 text-gray-300' // Inactive item style
+                  ? 'bg-purple-600 text-white' 
+                  : 'hover:bg-gray-700 text-gray-300' 
               }`}
             >
               {item.name}
             </div>
           ))}
         </nav>
-
-        {/* Sidebar Footer */}
         <div className="mt-28 border-t border-gray-700 pt-4 ">
           <p className="text-sm text-gray-400">@onyangosoftwares</p>
         </div>
@@ -68,4 +64,4 @@ const Slider = ({ isOpen, toggleSidebar }) => {
   );
 };
 
-export default Slider;
+export default SideBar;
